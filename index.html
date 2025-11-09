@@ -369,14 +369,30 @@
             margin-bottom: 40px;
         }
         
-        .founders-grid {
+        .founders-image {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+            margin-bottom: 30px;
+        }
+        
+        .founders-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .founders-profiles {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
             width: 100%;
+            max-width: 800px;
         }
         
-        .founder-card {
+        .founder-profile {
             text-align: center;
             background-color: var(--dark);
             border-radius: 8px;
@@ -385,31 +401,16 @@
             transition: transform 0.3s;
         }
         
-        .founder-card:hover {
+        .founder-profile:hover {
             transform: translateY(-10px);
         }
         
-        .founder-img {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            overflow: hidden;
-            margin: 0 auto 20px;
-            border: 3px solid var(--primary);
-        }
-        
-        .founder-img img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        
-        .founder-card h3 {
+        .founder-profile h3 {
             font-size: 1.4rem;
             margin-bottom: 5px;
         }
         
-        .founder-card p {
+        .founder-profile p {
             color: var(--secondary);
             font-weight: 500;
         }
@@ -649,7 +650,7 @@
                 gap: 30px;
             }
             
-            .menu-grid, .founders-grid {
+            .menu-grid, .founders-profiles {
                 grid-template-columns: 1fr;
                 gap: 25px;
             }
@@ -681,17 +682,12 @@
                 font-size: 1.8rem;
             }
             
-            .menu-item, .founder-card {
+            .menu-item, .founder-profile {
                 padding: 20px 15px;
             }
             
             .contact-form {
                 padding: 30px 20px;
-            }
-            
-            .founder-img {
-                width: 150px;
-                height: 150px;
             }
         }
     </style>
@@ -800,22 +796,21 @@
                     <p>Depois de anos de experimentação e aperfeiçoamento, nasceu a Smash Burger - um lugar onde a paixão pela culinária se encontra com a técnica precisa do smash, criando hambúrgueres com crosta perfeita e sabor inigualável.</p>
                     <p>Hoje, a hamburgueria é mais do que um negócio - é a realização de um sonho construído a quatro mãos, onde cada hambúrguer conta uma história de amizade, dedicação e amor pela boa comida.</p>
                 </div>
-                <div class="founders-grid">
-                    <div class="founder-card">
-                        <div class="founder-img">
-                            <img src="https://raw.githubusercontent.com/Gaaba97/exemplo2/main/e83b6450-229a-448f-9ca3-f7051b051915.jpg" alt="Marco Silva">
-                        </div>
+                
+                <div class="founders-image">
+                    <img src="https://raw.githubusercontent.com/Gaaba97/exemplo2/main/e83b6450-229a-448f-9ca3-f7051b051915.jpg" alt="Marco e Fábio - Fundadores da Smash Burger">
+                </div>
+                
+                <div class="founders-profiles">
+                    <div class="founder-profile">
                         <h3>Marco Silva</h3>
                         <p>Co-fundador e Chef Executivo</p>
-                        <p>Especialista em hambúrgueres artesanais com mais de 10 anos de experiência. Marco é o mestre da técnica smash e responsável pela criação dos blends exclusivos da casa.</p>
+                        <p>Especialista em hambúrgueres artesanais com mais de 10 anos de experiência. Marco é o mestre da técnica smash e responsável pela criação dos blends exclusivos da casa. Sua paixão pela culinária começou ainda na infância, ajudando sua avó na cozinha.</p>
                     </div>
-                    <div class="founder-card">
-                        <div class="founder-img">
-                            <img src="https://raw.githubusercontent.com/Gaaba97/exemplo2/main/e83b6450-229a-448f-9ca3-f7051b051915.jpg" alt="Fábio Sousa">
-                        </div>
+                    <div class="founder-profile">
                         <h3>Fábio Sousa</h3>
                         <p>Co-fundador e Chef de Operações</p>
-                        <p>Com expertise em gestão e operações, Fábio garante que cada experiência na Smash Burger seja memorável, cuidando de todos os detalhes para que nossos clientes tenham o melhor atendimento.</p>
+                        <p>Com expertise em gestão e operações, Fábio garante que cada experiência na Smash Burger seja memorável. Formado em administração, ele encontrou na gastronomia sua verdadeira paixão e hoje cuida de todos os detalhes para que nossos clientes tenham o melhor atendimento.</p>
                     </div>
                 </div>
             </div>
