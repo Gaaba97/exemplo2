@@ -351,18 +351,32 @@
             font-size: 1.3rem;
         }
         
-        /* Equipe */
-        .team {
+        /* Fundadores */
+        .founders {
             background-color: var(--darker);
         }
         
-        .team-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
+        .founders-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
         }
         
-        .team-member {
+        .founders-story {
+            max-width: 800px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .founders-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            width: 100%;
+        }
+        
+        .founder-card {
             text-align: center;
             background-color: var(--dark);
             border-radius: 8px;
@@ -371,31 +385,31 @@
             transition: transform 0.3s;
         }
         
-        .team-member:hover {
+        .founder-card:hover {
             transform: translateY(-10px);
         }
         
-        .team-member-img {
-            width: 150px;
-            height: 150px;
+        .founder-img {
+            width: 200px;
+            height: 200px;
             border-radius: 50%;
             overflow: hidden;
             margin: 0 auto 20px;
             border: 3px solid var(--primary);
         }
         
-        .team-member-img img {
+        .founder-img img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
         
-        .team-member h3 {
+        .founder-card h3 {
             font-size: 1.4rem;
             margin-bottom: 5px;
         }
         
-        .team-member p {
+        .founder-card p {
             color: var(--secondary);
             font-weight: 500;
         }
@@ -635,7 +649,7 @@
                 gap: 30px;
             }
             
-            .menu-grid, .team-grid {
+            .menu-grid, .founders-grid {
                 grid-template-columns: 1fr;
                 gap: 25px;
             }
@@ -667,12 +681,17 @@
                 font-size: 1.8rem;
             }
             
-            .menu-item, .team-member {
+            .menu-item, .founder-card {
                 padding: 20px 15px;
             }
             
             .contact-form {
                 padding: 30px 20px;
+            }
+            
+            .founder-img {
+                width: 150px;
+                height: 150px;
             }
         }
     </style>
@@ -687,7 +706,7 @@
                     <li><a href="#home">Início</a></li>
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#menu">Menu</a></li>
-                    <li><a href="#equipe">Equipe</a></li>
+                    <li><a href="#fundadores">Fundadores</a></li>
                     <li><a href="#contato">Contato</a></li>
                 </ul>
                 <div class="mobile-menu">
@@ -757,7 +776,7 @@
                 </div>
                 <div class="menu-item">
                     <div class="menu-item-img">
-                        <img src="https://images.unsplash.com/photo-1606755962773-d324e3833248?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" alt="Double Smash">
+                        <img src="https://raw.githubusercontent.com/Gaaba97/exemplo2/main/ChatGPT%20Image%209%20de%20nov.%20de%202025%2C%2010_41_03.png" alt="Double Smash">
                     </div>
                     <div class="menu-item-content">
                         <h3>Double Smash <span class="price">R$ 34,90</span></h3>
@@ -768,37 +787,36 @@
         </div>
     </section>
 
-    <!-- Equipe -->
-    <section id="equipe" class="team">
+    <!-- Fundadores -->
+    <section id="fundadores" class="founders">
         <div class="container">
             <div class="section-title">
-                <h2>Nossa Equipe</h2>
-                <p>Conheça os talentosos profissionais por trás dos nossos hambúrgueres</p>
+                <h2>Nossos Fundadores</h2>
+                <p>Conheça a história por trás da Smash Burger</p>
             </div>
-            <div class="team-grid">
-                <div class="team-member">
-                    <div class="team-member-img">
-                        <img src="https://images.unsplash.com/photo-1566554273541-37a9ca77b91f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Chef Marco">
-                    </div>
-                    <h3>Marco Silva</h3>
-                    <p>Chef Executivo</p>
-                    <p>Especialista em hambúrgueres artesanais com mais de 10 anos de experiência.</p>
+            <div class="founders-content">
+                <div class="founders-story">
+                    <p>Há mais de uma década, dois amigos apaixonados por gastronomia e hambúrgueres artesanais, Marco e Ana, compartilhavam o sonho de criar algo especial. Unidos pela amizade e pela crença de que um bom hambúrguer pode transformar o dia de qualquer pessoa, eles mergulharam de cabeça no mundo da técnica smash.</p>
+                    <p>Depois de anos de experimentação e aperfeiçoamento, nasceu a Smash Burger - um lugar onde a paixão pela culinária se encontra com a técnica precisa do smash, criando hambúrgueres com crosta perfeita e sabor inigualável.</p>
+                    <p>Hoje, a hamburgueria é mais do que um negócio - é a realização de um sonho construído a duas mãos, onde cada hambúrguer conta uma história de amizade, dedicação e amor pela boa comida.</p>
                 </div>
-                <div class="team-member">
-                    <div class="team-member-img">
-                        <img src="https://images.unsplash.com/photo-1583394293213-9380b4e965b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Chef Ana">
+                <div class="founders-grid">
+                    <div class="founder-card">
+                        <div class="founder-img">
+                            <img src="https://raw.githubusercontent.com/Gaaba97/exemplo2/main/e83b6450-229a-448f-9ca3-f7051b051915.jpg" alt="Marco Silva">
+                        </div>
+                        <h3>Marco Silva</h3>
+                        <p>Co-fundador e Chef Executivo</p>
+                        <p>Especialista em hambúrgueres artesanais com mais de 10 anos de experiência. Marco é o mestre da técnica smash e responsável pela criação dos blends exclusivos da casa.</p>
                     </div>
-                    <h3>Ana Costa</h3>
-                    <p>Co-proprietária</p>
-                    <p>Responsável pela criação dos sabores únicos que definem a Smash Burger.</p>
-                </div>
-                <div class="team-member">
-                    <div class="team-member-img">
-                        <img src="https://images.unsplash.com/photo-1581299894007-aaa50297cf16?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Gerente Lucas">
+                    <div class="founder-card">
+                        <div class="founder-img">
+                            <img src="https://images.unsplash.com/photo-1583394293213-9380b4e965b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Ana Costa">
+                        </div>
+                        <h3>Ana Costa</h3>
+                        <p>Co-fundadora e Chef de Criação</p>
+                        <p>Com background em gastronomia internacional, Ana traz criatividade e inovação para o cardápio, desenvolvendo combinações únicas que surpreendem os clientes.</p>
                     </div>
-                    <h3>Lucas Oliveira</h3>
-                    <p>Gerente Geral</p>
-                    <p>Garante que cada cliente tenha uma experiência memorável em nossa hamburgueria.</p>
                 </div>
             </div>
         </div>
